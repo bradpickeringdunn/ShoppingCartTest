@@ -1,8 +1,5 @@
 ﻿using AutoMapper;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Entities = ShoppingCart.Repository.Entities;
+using Entities = ShoppingKart.Repository.Entities;
 
 namespace ShoppingKart.Domain.Mapping
 {

@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using ShoppingCart.MockRepository;
+using ShoppingKart.MockRepository;
 using ShoppingKart.Domain.Mapping;
 using ShoppingKart.Domain.Models;
 using ShoppingKart.Domain.Services;
@@ -42,7 +42,11 @@ namespace ShoppingKart.Domain.Tests.Services
 
             ShoppingBasket basket = await service.CheckoutItems(items, CancellationToken.None).ConfigureAwait(false);
 
-            Assert.AreEqual(18, basket.Total);
+            Assert.AreEqual(17, basket.Total);
+            Assert.AreEqual(19, basket.SubTotal);
+            Assert.AreEqual(2, basket.Savings);
+            offersService.Verify(x => x.ProcessOffers(It.IsAny<List<Models.Product>>(), CancellationToken.None), Times.Once());
+            productService.Verify(x => x.GetProducts(It.IsAny<List<string>>(), It.IsAny<CancellationToken>()), Times.Once());
         }
     }
 }

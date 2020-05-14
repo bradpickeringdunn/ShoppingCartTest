@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Repository\ShoppingCart.Repository\ShoppingCart.Repository.csproj" />
+    <ProjectReference Include="..\..\Repository\ShoppingCart.Repository\ShoppingKart.Repository.csproj" />
     <ProjectReference Include="..\ShoppingKart.Domain.Models\ShoppingKart.Domain.Models.csproj" />
   </ItemGroup>
 

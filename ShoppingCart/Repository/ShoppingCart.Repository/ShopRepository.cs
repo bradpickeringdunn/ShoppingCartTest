@@ -1,9 +1,9 @@
-﻿using ShoppingCart.Repository.Entities;
+﻿using ShoppingKart.Repository.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ShoppingCart.Repository
+namespace ShoppingKart.Repository
 {
     public class ShopRepository : IRepository
     {

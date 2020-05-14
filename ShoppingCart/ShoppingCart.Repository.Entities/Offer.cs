@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace ShoppingCart.Repository.Entities
+namespace ShoppingKart.Repository.Entities
 {
     public class Offer : BaseEntity
     {

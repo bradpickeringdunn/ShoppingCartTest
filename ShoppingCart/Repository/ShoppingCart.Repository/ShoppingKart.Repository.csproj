@@ -11,8 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\ShoppingCart.Repository.Entities\ShoppingCart.Repository.Entities.csproj" />
-    <ProjectReference Include="..\ShoppingCart.MockRepository\ShoppingCart.MockRepository.csproj" />
+    <ProjectReference Include="..\..\ShoppingCart.Repository.Entities\ShoppingKart.Repository.Entities.csproj" />
+    <ProjectReference Include="..\ShoppingCart.MockRepository\ShoppingKart.MockRepository.csproj" />
   </ItemGroup>
 
 </Project>

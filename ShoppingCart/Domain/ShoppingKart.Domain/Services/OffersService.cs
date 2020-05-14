@@ -1,5 +1,5 @@
-﻿using ShoppingCart.Repository;
-using Entities = ShoppingCart.Repository.Entities;
+﻿using ShoppingKart.Repository;
+using Entities = ShoppingKart.Repository.Entities;
 using ShoppingKart.Domain.Models;
 using System;
 using System.Collections.Generic;

@@ -1,11 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ShoppingCart.MockRepository;
-using ShoppingCart.Repository.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace ShoppingCart.Repository
+namespace ShoppingKart.Repository
 {
     public class ShopDBContext : DbContext
     {

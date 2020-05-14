@@ -1,9 +1,9 @@
-﻿using ShoppingCart.Repository.Entities;
+﻿using ShoppingKart.Repository.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ShoppingCart.MockRepository
+namespace ShoppingKart.MockRepository
 {
     public static class MockOffers
     {

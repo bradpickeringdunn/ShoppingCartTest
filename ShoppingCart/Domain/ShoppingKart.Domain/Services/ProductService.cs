@@ -1,12 +1,10 @@
-﻿using AutoMapper;
-using ShoppingCart.Repository;
+﻿using ShoppingKart.Repository;
 using ShoppingKart.Domain.Mapping;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Entities = ShoppingCart.Repository.Entities;
+using Entities = ShoppingKart.Repository.Entities;
 
 namespace ShoppingKart.Domain.Services
 {

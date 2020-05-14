@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ShoppingCart.MockRepository
+namespace ShoppingKart.MockRepository
 {
     public static class MockProducts
     {

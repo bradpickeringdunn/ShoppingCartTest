@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace ShoppingCart.Repository.Entities
+namespace ShoppingKart.Repository.Entities
 {
     public class Product : BaseEntity
     {

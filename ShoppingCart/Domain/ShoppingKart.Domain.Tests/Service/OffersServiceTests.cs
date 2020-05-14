@@ -1,16 +1,14 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using ShoppingCart.MockRepository;
-using ShoppingCart.Repository;
+using ShoppingKart.MockRepository;
+using ShoppingKart.Repository;
 using ShoppingKart.Domain.Mapping;
-using ShoppingKart.Domain.Models;
 using ShoppingKart.Domain.Services;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Entities = ShoppingCart.Repository.Entities;
+using Entities = ShoppingKart.Repository.Entities;
 
 namespace ShoppingKart.Domain.Tests.Services
 {
@@ -28,7 +26,7 @@ namespace ShoppingKart.Domain.Tests.Services
         [TestMethod]
         public async Task Ensure_Offers_Can_Be_Applied()
         {
-            _repo.Setup(x => x.GetAll<Entities.Offer>(It.IsAny<Func<Entities.Offer, bool>>())).Returns(ShoppingCart.MockRepository.MockOffers.GetOffers());
+            _repo.Setup(x => x.GetAll<Entities.Offer>(It.IsAny<Func<Entities.Offer, bool>>())).Returns(MockOffers.GetOffers());
 
             var dbProducts = MockProducts.GetProducts();
             var products = new List<Models.Product>
@@ -57,7 +55,7 @@ namespace ShoppingKart.Domain.Tests.Services
         [TestMethod]
         public async Task Ensure_If_No_Offers_N0_Savings_Applied()
         {
-            _repo.Setup(x => x.GetAll<Entities.Offer>(It.IsAny<Func<Entities.Offer, bool>>())).Returns(ShoppingCart.MockRepository.MockOffers.GetOffers());
+            _repo.Setup(x => x.GetAll<Entities.Offer>(It.IsAny<Func<Entities.Offer, bool>>())).Returns(MockOffers.GetOffers());
 
             var dbProducts = MockProducts.GetProducts();
             var products = new List<Models.Product>
